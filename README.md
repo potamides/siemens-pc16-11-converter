@@ -43,3 +43,8 @@ The three red keys in the upper right section of the keyboard do only send
 keycodes when they are pressed together with `CTRL`. Pressing the right red key
 together with `Shift` doesn't produce a keycode but toggles the internal beeper
 speaker of the keyboard.
+
+The keyboard contains an [EPROM](https://en.wikipedia.org/wiki/EPROM) which
+holds the program that the keyboard runs. Since EPROMs are prone to data rot I
+made a back up
+[here](https://github.com/potamides/siemens-pc16-11-converter/releases/download/v1.0.0/eprom-dump.bin).
