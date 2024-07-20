@@ -30,6 +30,8 @@ directory and run these commands:
 make
 avrdude -patmega32u4 -cavr109 -b57600 -Uflash:w:pc16_11_usb.hex -P /dev/ttyACM0
 ```
+Prebuilt binaries can be downloaded
+[here](https://github.com/potamides/siemens-pc16-11-converter/releases/latest/download/pc16_11_usb.hex).
 
 You can change the keymap in `keymap.c`. You can find a list of possible key
 symbols in
@@ -47,4 +49,4 @@ speaker of the keyboard.
 The keyboard contains an [EPROM](https://en.wikipedia.org/wiki/EPROM) which
 holds the program that the keyboard runs. Since EPROMs are prone to data rot I
 made a back up
-[here](https://github.com/potamides/siemens-pc16-11-converter/releases/download/v1.0.0/eprom-dump.bin).
+[here](https://github.com/potamides/siemens-pc16-11-converter/releases/latest/download/eprom-dump.bin).
