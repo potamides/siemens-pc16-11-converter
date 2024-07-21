@@ -12,7 +12,7 @@ scanned and uploaded
 [here](https://oldcomputers-ddns.org/public/pub/rechner/siemens/pc16-11/manuals/index.html).
 I connected the `+RxD` pin to the `Rx` pin of the Pro Micro. Since we don't
 need `-RxD` I connected it to `GND` with a 2.2 kOhm resistor. You might also
-need to close the `J1` sodler bridge on the Pro Micro:
+need to close the `J1` solder bridge on the Pro Micro:
 
 ![wiring](https://github.com/user-attachments/assets/dca9f12e-27fa-489d-b6b8-9cd6551309f1)
 
