@@ -2,6 +2,7 @@
 #define SCANCODES_H
 
 #include <stdint.h>
+#include <stdbool.h>
 
 // Set Ctrl and Shift as first two keys in the virtual matrix to interpret
 // simultaneously pressed keys as expected
@@ -215,10 +216,10 @@ uint8_t INTL_SCANCODES[][3] = {
 };
 
 // Keycodes of alternating keys
-// {On, Off, Idx}
-uint8_t ALT_SCANCODES[][3] = {
-  {0xDF, 0x9F, SICOMP_INTL_IDX},
-  {0xA9, 0xE9, SICOMP_CAPS_IDX},
+// {On, Off, Idx, w/ Ctrl?}
+uint8_t ALT_SCANCODES[][4] = {
+  {0xDF, 0x9F, SICOMP_INTL_IDX, true},
+  {0xA9, 0xE9, SICOMP_CAPS_IDX, false},
 };
 
 scancode_t parse_scancode(uint8_t raw_code, bool intl) {
@@ -237,6 +238,7 @@ scancode_t parse_scancode(uint8_t raw_code, bool intl) {
         for (size_t j = 0; j < 2; j++) {
             if (ALT_SCANCODES[i][j] == raw_code) {
                 code.key = ALT_SCANCODES[i][2];
+                code.ctrl = ALT_SCANCODES[i][3];
                 code.locking = true;
                 return code;
             }
