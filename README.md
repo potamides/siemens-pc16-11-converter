@@ -4,7 +4,9 @@ the [Siemens PC 16-11](https://www.tecmumas.de/de/computer/siemens_pc1611.htm)
 keyboard. It makes use of the [tmk_core](https://github.com/tmk/tmk_core)
 keyboard firmware library and was tested with the [Pro
 Micro](https://joy-it.net/en/products/ARD_Pro-Micro) microcontroller, but other
-Atmel AVR ATmega32U4 based boards should work as well.
+Atmel AVR ATmega32U4 based boards should work as well. For more information on
+how I designed the converter look
+[here](https://deskthority.net/viewtopic.php?f=7&t=29402).
 
 ## Wiring
 All wiring information comes from the official manual which someone kindly
